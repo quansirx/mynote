@@ -1,0 +1,11 @@
+1) 手机已经root，且装有busybox，
+2) 还装有至少一款terminal（模拟终端）软件，手机连wifi路由器。
+3) 还要有一些基础常识，比如linux命令，telnet。
+(1)Android端打开terminal软件，输入以下命令# su
+然后按软键盘的“回车”，su命令指 获得root权限
+(2)# busybox ifconfig
+此命令获得手机的ip
+# busybox telnetd -l /system/bin/sh
+开启telnetd服务，telnetd可以看作一个服务端。
+(4)然后回到电脑端，开始-运行-cmd，输入telnet 192.168.1.101，回车,
+ok，就连上手机了，大部分linux命令都可以执行 
