@@ -87,3 +87,6 @@ sudo nginx -s stop
 
 查看nginx进程
 ps -aux |grep nginx
+
+gcc -E -c hello.i helloc.c
+gcc -S
