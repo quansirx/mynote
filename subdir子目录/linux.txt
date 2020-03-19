@@ -1,0 +1,89 @@
+ps -aux
+
+ls -l /etc|more
+
+ls -l /etc>m5
+
+more m5
+
+fi + 两次Tab键
+
+useradd -p password1 test1
+
+chmod u+x t.txt //改变用户文件执行权限
+chmod u-x t.txt //改变用户文件执行权限
+ls -al
+
+chmod g-x t.txt //改变用户文件执行权限
+chmod o-x t.txt //改变用户文件执行权限
+
+ls -l | cat //显示文件并以cat方式打印
+ls- l | more
+
+ls -l|grep tem
+
+gcc main.c
+自动生成a.out文件
+./a.out
+
+//hello是输出的文件名
+gcc main.c -o hello
+//运行
+./hello
+
+
+软件源问题
+就是没有更新APT库
+更新一下就好了
+
+sudo apt-get update
+sudo apt-get upgrade
+1
+2
+然后再apt-get install *** 就好了，解决。
+
+卸载软件：
+
+apt-get：
+
+（1）apt-get remove package_name 只卸载软件包；
+
+（2）apt-get purge package_name 卸载并清除软件包的配置
+
+aptitude:
+
+（1）aptitude remove package_name 只卸载软件包；
+
+（2）apttude purge package_name 卸载并清除软件包的配置
+
+apt-get update:更新安装列表
+apt-get upgrade:升级软件
+apt-get install software_name :安装软件
+apt-get --purge remove  software_name :卸载软件及其配置
+apt-get autoremove software_name:卸载软件及其依赖的安装包
+
+sudo apt install tree
+
+tree
+
+tree |grep xxx
+tree |cat
+
+ubuntu 杀死进程命令
+如果是查看本机所有的进行的进程：
+
+1
+ps aux　#　用ps -A查看所有进程
+　　杀死进程：
+
+1
+kill -9 PID # PID是进程号,查看进程时会显示
+
+
+启动nginx 
+sudo nginx
+停止nginx
+sudo nginx -s stop
+
+查看nginx进程
+ps -aux |grep nginx
