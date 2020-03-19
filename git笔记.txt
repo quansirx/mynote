@@ -132,6 +132,17 @@ git push -u origin master
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
+创建本地分支 git branch branch01
+切换到新分支 git checkout branch01
+切换到主分支 git checkout master
+将新分支推送到GitHub git push origin branch01
+
+显示远程分支git branch -r
+显示本地分支git branch
+显示本地和远程的分支git branch -a
+删除本地分支 git branch -d branch01 
+git branch -D branch01 
+
 
 
 
